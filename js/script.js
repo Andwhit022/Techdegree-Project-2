@@ -17,7 +17,7 @@ FSJS project 2 - List Filter and Pagination
    scoped to that function.
 ***/
 let studentList = document.querySelector('.student-list');
-let pageItems = 0;
+let pageItems = 10;
 
 
 /*** 
@@ -34,7 +34,21 @@ let pageItems = 0;
        that will be passed into the parens later when you call or 
        "invoke" the function 
 ***/
+const showPage  = (list, page) => {
+   let startIndex = (page * 10) - 10;
+   let endIndex = page * 10;
 
+
+   for (let i =0; i < studentList.lenght; i += 1){
+      let item = list[i];
+
+      if (item >= startIndex && item <= endIndex ){
+         item.style.display = "block";
+      } else{
+         item.style.display = "none";
+     }
+   }
+}
 
 
 
@@ -43,7 +57,10 @@ let pageItems = 0;
    functionality to the pagination buttons.
 ***/
 
+const appendPageLinks = (list) => {
 
+
+}
 
 
 
