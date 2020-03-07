@@ -16,9 +16,9 @@ FSJS project 2 - List Filter and Pagination
    will only be used inside of a function, then it can be locally 
    scoped to that function.
 ***/
-let studentList = document.getElementsByClassName('student-item cf');
+let studentList = document.querySelectorAll("student-item cf");
 let pageItems = 10;
-let page = document.getElementsByClassName('page');
+let page = document.querySelector(".page");
 
 /*** 
    Create the `showPage` function to hide all of the items in the 
