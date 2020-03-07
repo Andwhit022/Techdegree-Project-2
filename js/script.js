@@ -60,7 +60,7 @@ const appendPageLinks = (list) => {
    let maxPages = studentList.length/pageItems;
    let linkDiv = document.createElement('div');
    linkDiv.className = 'pagination';
-   linkDiv.appendChild(page);
+   page.appendChild(linkDiv);
    let ul = document.createElement('ul');
    ul.appendChild(linkDiv);
 
