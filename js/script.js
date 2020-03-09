@@ -4,7 +4,7 @@ FSJS project 2 - List Filter and Pagination
 ******************************************/
    
 
-//create global variables to hold student list items and number of items on each page.
+//set global variables to hold student list items and number of items on each page.
 let studentList = document.querySelectorAll('li.student-item');
 let pageItems = 10;
 
